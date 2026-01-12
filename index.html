@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>WB 定价计算器</title>
+
+  <!-- React & ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel：让浏览器识别 JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- 你原本的样式（如果有 Tailwind / CSS，可继续加） -->
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      background: #f8fafc;
+      margin: 0;
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- React 挂载点 -->
+  <div id="root"></div>
+
+  <!-- 你的 React 代码放这里 -->
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    /* ======= ↓↓↓ 把你原来的 App 代码原样放进来 ↓↓↓ ======= */
+
+    const App = () => {
+      return (
+        <div>
+          <h1>WB 定价计算器</h1>
+          <p>这里是你的原始计算逻辑和 UI</p>
+        </div>
+      );
+    };
+
+    /* ======= ↑↑↑ 你原来的代码到这里结束 ↑↑↑ ======= */
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+
+</body>
+</html>
